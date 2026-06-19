@@ -1,0 +1,778 @@
+[
+  {
+    "id": "TC001",
+    "title": "Homepage loads with profile summary and navigation",
+    "description": "Verify that a visitor can open the homepage, see Saran’s introductory profile content, and access the main navigation across the site.",
+    "category": "Homepage hero and sticky navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify Saran’s profile summary content is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the main navigation is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Homepage shows Saran's professional snapshot",
+    "description": "Verifies that the homepage loads Saran's profile introduction, metrics, and primary entry points to the portfolio.",
+    "category": "Homepage Hero and Professional Snapshot",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify Saran's profile introduction is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify professional metrics are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify portfolio navigation actions are available"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Sticky navigation remains usable while browsing sections",
+    "description": "Verify that a visitor can move between major portfolio sections from the header and continue navigating without losing access to the menu.",
+    "category": "Homepage hero and sticky navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the about page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the experience page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the projects page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the projects section is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the main navigation is still visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Sticky navigation opens the About page from the homepage",
+    "description": "Verifies that the header navigation can move from the homepage to About and load the about content.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation item for the about page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the about page content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the active navigation state reflects the about page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Header navigation updates active section across portfolio pages",
+    "description": "Verify that a visitor can start on one section and use the header to move through the portfolio while the current section remains clearly indicated.",
+    "category": "Homepage hero and sticky navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the experience page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the publications page"
+      },
+      {
+        "type": "action",
+        "description": "Click the link to open the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact page is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the active navigation state reflects the current section"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Sticky navigation moves from About to Experience",
+    "description": "Verifies that the header navigation works from About and loads the experience timeline.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation item for the experience page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the experience timeline is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the active navigation state reflects the experience page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Homepage directs visitors to the projects showcase",
+    "description": "Verifies that a visitor can move from the homepage hero to the projects section and see the projects content load.",
+    "category": "Homepage Hero and Professional Snapshot",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the action that opens the projects section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the projects showcase is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify project descriptions and tech stack details are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Homepage CTA opens the projects section",
+    "description": "Verify that a visitor can use the homepage project call to action to reach the projects showcase and see project content.",
+    "category": "Homepage hero and sticky navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the homepage action that opens the projects section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the projects showcase is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify project content is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "See contact details and outbound links",
+    "description": "A visitor can open the contact page and review the contact details and external contact actions.",
+    "category": "Contact Information",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact details are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify email and social contact links are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Sticky navigation moves from Projects to Contact",
+    "description": "Verifies that a visitor can navigate from Projects to Contact and see the contact details load.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /projects"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation item for the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact details are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the active navigation state reflects the contact page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Experience page shows timeline entries",
+    "description": "Verify that a visitor can open the experience page and read the company, role, and timeline history.",
+    "category": "Experience Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /experience"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify experience cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify company and role details are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Homepage directs visitors to the experience section",
+    "description": "Verifies that a visitor can move from the homepage hero to the experience page and see the work timeline load.",
+    "category": "Homepage Hero and Professional Snapshot",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the action that opens the experience section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the experience timeline is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify work and internship details are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "About page displays background and skills content",
+    "description": "Verify that a visitor can open the about page and read the background, education, and skills information.",
+    "category": "About Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify background information is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify education and skills content is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Open contact page from another portfolio section",
+    "description": "A visitor can move to the contact page from within the portfolio and confirm the contact section loads fully.",
+    "category": "Contact Information",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /publications"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the contact page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact details are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact actions are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "About page presents background, education, and skills",
+    "description": "Verifies that the About page loads the expected personal background, education, and skills content.",
+    "category": "About Page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify personal background details are visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify education information is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify skills information is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Projects page shows descriptions and technology stacks",
+    "description": "Verify that a visitor can open the projects page and review project descriptions together with their technology stacks.",
+    "category": "Projects Showcase",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /projects"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify project cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify project descriptions and technology stacks are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "View achievements cards and recognition details",
+    "description": "A visitor can open the achievements page and review the accomplishment cards with their descriptions.",
+    "category": "Achievements Showcase",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /achievements"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify achievement cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify award and recognition details are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Sticky navigation returns from Gallery to Home",
+    "description": "Verifies that the header navigation can return from Gallery to the homepage and restore the hero section.",
+    "category": "Site Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation item for the home page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the homepage hero is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the active navigation state reflects the home page"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "Publications page shows paper titles and abstracts",
+    "description": "Verify that a visitor can open the publications page and read publication titles and abstracts.",
+    "category": "Publications Listing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /publications"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the publications list is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify publication titles and abstracts are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC020",
+    "title": "Reach achievements from another section and preserve navigation",
+    "description": "A visitor can move to the achievements page from another portfolio section and still access the sticky navigation afterward.",
+    "category": "Achievements Showcase",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /about"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the achievements page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify achievement content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the navigation remains available"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC021",
+    "title": "Browse gallery images and captions",
+    "description": "A visitor can open the gallery page and view the image showcase with its captions.",
+    "category": "Engineering Gallery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify gallery images are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify image captions are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC022",
+    "title": "Homepage directs visitors to the gallery",
+    "description": "Verifies that a visitor can move from the homepage hero to the gallery and see project images and captions load.",
+    "category": "Homepage Hero and Professional Snapshot",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the action that opens the gallery section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the gallery is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify images and captions are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC023",
+    "title": "Contact page shows contact details and outbound links",
+    "description": "Verify that a visitor can open the contact page and access the visible contact details and outbound contact actions.",
+    "category": "Contact page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact details are visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify outbound contact links are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "Review achievement cards after browsing the portfolio",
+    "description": "A visitor can move from the projects area into achievements and confirm the accomplishments section loads correctly.",
+    "category": "Achievements Showcase",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /projects"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the achievements page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify achievement cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify certifications or recognition details are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC025",
+    "title": "Launch email and social contact actions",
+    "description": "A visitor can use the contact page links to start an email action and open a social profile action.",
+    "category": "Contact Information",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /contact"
+      },
+      {
+        "type": "action",
+        "description": "Click the email contact link"
+      },
+      {
+        "type": "action",
+        "description": "Click the social profile link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact actions are available on the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify contact details remain visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC026",
+    "title": "Homepage directs visitors to the publications section",
+    "description": "Verifies that a visitor can move from the homepage hero to the publications page and see paper listings load.",
+    "category": "Homepage Hero and Professional Snapshot",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the action that opens the publications section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the publications listing is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify publication titles and abstracts are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC027",
+    "title": "Achievements page shows accomplishment cards",
+    "description": "Verify that a visitor can open the achievements page and see the listed awards, certifications, or achievements.",
+    "category": "Achievements page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /achievements"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify achievement cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify accomplishment details are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC028",
+    "title": "Move to gallery from the homepage and continue browsing",
+    "description": "A visitor can jump from the homepage into the gallery and confirm the visual showcase loads correctly.",
+    "category": "Engineering Gallery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the homepage link to the gallery"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify gallery images are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify captions for the showcased images are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC029",
+    "title": "Gallery page renders images and captions",
+    "description": "Verify that a visitor can open the gallery page and see the project images with their captions.",
+    "category": "Gallery page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /gallery"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify gallery images are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify image captions are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC030",
+    "title": "View gallery content after visiting another section",
+    "description": "A visitor can navigate to the gallery from a different section and still see the full image presentation.",
+    "category": "Engineering Gallery",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /experience"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link to the gallery page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify gallery images are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify image captions are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC031",
+    "title": "Homepage résumé action reflects the documented limitation",
+    "description": "Verifies that the résumé download action on the homepage does not produce an actual file download as documented.",
+    "category": "Homepage Hero and Professional Snapshot",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the résumé download action"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no file download begins"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the homepage remains usable after the action"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC032",
+    "title": "Resume action matches the documented limitation",
+    "description": "Verify that the homepage résumé action is available and does not produce a downloadable file, matching the documented limitation.",
+    "category": "Homepage hero and sticky navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the résumé download action"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the résumé action is available"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify no file download is initiated"
+      }
+    ],
+    "priority": "Low"
+  }
+]

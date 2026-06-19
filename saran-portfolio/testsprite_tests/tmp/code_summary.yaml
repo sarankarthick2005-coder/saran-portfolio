@@ -1,0 +1,149 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - Next.js 16
+  - React
+  - Tailwind CSS
+  - HTML/CSS
+routes:
+  - path: /
+    file: app/page.tsx
+    auth_required: false
+    description: Home page with hero section, profile image, CTA buttons, and professional metrics
+  - path: /about
+    file: app/about/page.tsx
+    auth_required: false
+    description: About page with personal information and background
+  - path: /experience
+    file: app/experience/page.tsx
+    auth_required: false
+    description: Work and internship experience page
+  - path: /projects
+    file: app/projects/page.tsx
+    auth_required: false
+    description: Projects showcase page
+  - path: /publications
+    file: app/publications/page.tsx
+    auth_required: false
+    description: Research publications and papers
+  - path: /achievements
+    file: app/achievements/page.tsx
+    auth_required: false
+    description: Awards, certifications, and achievements
+  - path: /gallery
+    file: app/gallery/page.tsx
+    auth_required: false
+    description: Engineering project gallery with images
+  - path: /contact
+    file: app/contact/page.tsx
+    auth_required: false
+    description: Contact information and form
+features:
+  - name: Hero Section
+    description: Landing page hero with profile photo, name, tagline, and call-to-action buttons
+    files:
+      - app/page.tsx
+    entry_route: /
+    user_interactions:
+      - View profile photo
+      - Click "View Projects" button to navigate to /projects
+      - Click "Download Resume" button
+      - Click "Experience" link to navigate to /experience
+      - Click "Engineering Gallery" link to navigate to /gallery
+      - Click "Research" link to navigate to /publications
+    api_calls: []
+    auth_required: false
+  - name: Professional Metrics
+    description: Animated cards displaying CGPA, books read, trainings, projects, certifications, and hackathon prize
+    files:
+      - app/page.tsx
+    entry_route: /
+    user_interactions:
+      - View animated metric cards on page load
+    api_calls: []
+    auth_required: false
+  - name: Navigation Header
+    description: Sticky header with navigation links to all pages
+    files:
+      - app/components/Header.tsx
+    entry_route: /
+    user_interactions:
+      - Click navigation links to switch between pages
+      - View active page highlight in navigation
+    api_calls: []
+    auth_required: false
+  - name: About Page
+    description: Personal background, skills, and education details
+    files:
+      - app/about/page.tsx
+    entry_route: /about
+    user_interactions:
+      - View personal information
+      - Read education and skills sections
+    api_calls: []
+    auth_required: false
+  - name: Experience Page
+    description: Work experience and internship details with timeline layout
+    files:
+      - app/experience/page.tsx
+    entry_route: /experience
+    user_interactions:
+      - View experience cards
+      - Read company and role details
+    api_calls: []
+    auth_required: false
+  - name: Projects Page
+    description: Engineering and software projects showcase
+    files:
+      - app/projects/page.tsx
+    entry_route: /projects
+    user_interactions:
+      - Browse project cards
+      - View project descriptions and tech stack
+    api_calls: []
+    auth_required: false
+  - name: Publications Page
+    description: Research papers and publications listing
+    files:
+      - app/publications/page.tsx
+    entry_route: /publications
+    user_interactions:
+      - View publications list
+      - Read paper titles and abstracts
+    api_calls: []
+    auth_required: false
+  - name: Achievements Page
+    description: Awards, hackathon wins, and certifications showcase
+    files:
+      - app/achievements/page.tsx
+    entry_route: /achievements
+    user_interactions:
+      - View achievement cards
+      - Read award descriptions
+    api_calls: []
+    auth_required: false
+  - name: Gallery Page
+    description: Visual gallery of engineering projects and photos
+    files:
+      - app/gallery/page.tsx
+    entry_route: /gallery
+    user_interactions:
+      - Browse gallery images
+      - View image captions
+    api_calls: []
+    auth_required: false
+  - name: Contact Page
+    description: Contact information and ways to reach Saran
+    files:
+      - app/contact/page.tsx
+    entry_route: /contact
+    user_interactions:
+      - View contact details
+      - Click email or social links
+    api_calls: []
+    auth_required: false
+known_limitations:
+  - issue: Download Resume button has no actual file linked
+    location: app/page.tsx
+    impact: Button click does not download any file
